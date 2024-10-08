@@ -26,7 +26,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - '&td_tildes'
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -43,9 +43,9 @@ layers:
   - $$mdi:keyboard-space$$
   - LGUI
   - lower
-  - {t: '$$mdi:keyboard-space$$', h: '3'}
-  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', h: '3'}
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:keyboard-space$$', h: '3'}
   - raise
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -141,9 +141,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:keyboard-space$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
