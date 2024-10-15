@@ -26,6 +26,13 @@
             bindings = <&kp LCTRL>, <&kp CAPS>;
         };
 
+        tdl3: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TDL3";
+            #binding-cells = <0>;
+            bindings = <&mo 3>, <&kp ESC>;
+        };
+
         td_tildes: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
