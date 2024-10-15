@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   default:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: '3'}
   - Q
   - W
   - E
@@ -27,7 +27,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - '&td_tildes'
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '3'}
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -148,7 +148,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   '3':
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - F1
   - F2
   - F3
@@ -174,7 +174,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - PRINTSCREEN
   - F12
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
