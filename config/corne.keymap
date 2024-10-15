@@ -26,13 +26,6 @@
             bindings = <&kp LCTRL>, <&kp CAPS>;
         };
 
-        tdl3: tap_dance_3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TDL3";
-            #binding-cells = <0>;
-            bindings = <&mo 3>, <&kp ESC>;
-        };
-
         td_tildes: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -84,7 +77,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W      &kp E     &kp R  &kp T          &kp UP_ARROW     &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &td0       &kp A  &kp S      &kp D     &kp F  &kp G          &kp DOWN_ARROW   &kp H        &kp J  &kp K      &kp L    &kp SEMI  &td_tildes
-&kp LSHFT  &kp Z  &kp X      &kp C     &kp V  &kp B          &kp LEFT_ARROW   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &tdl3
+&lt 3 LSHFT  &kp Z  &kp X      &kp C     &kp V  &kp B          &kp LEFT_ARROW   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &lt 3 ESC
                   &kp SPACE  &kp LGUI  &mo 1  &kp RET        &kp RIGHT_ARROW  &kp SPACE  &mo 2  &kp RALT
                                                              &kp ENTER
             >;
