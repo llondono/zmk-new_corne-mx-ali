@@ -45,84 +45,14 @@
             delay-ms = <0>;                   // 10
         };
 
-         hrm_a_lshift: hrm_a_lshift {
+        bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            label = "HRM_A_LSHIFT";
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms    = <125>;
-            bindings = <&kp A &kp LSHFT>;
-        };
-        
-        hrm_s_lctrl: hrm_s_lctrl {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            label = "HRM_S_LCTRL";
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms    = <125>;
-            bindings = <&kp S &kp LCTRL>;
-        };
-        
-        hrm_d_lalt: hrm_d_lalt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            label = "HRM_D_LALT";
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms    = <125>;
-            bindings = <&kp D &kp LALT>;
-        };
-        
-        hrm_f_lgui: hrm_f_lgui {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            label = "HRM_F_LGUI";
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms    = <125>;
-            bindings = <&kp F &kp LGUI>;
-        };
-        
-        hrm_j_rgui: hrm_j_rgui {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            label = "HRM_J_RGUI";
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms    = <125>;
-            bindings = <&kp J &kp RGUI>;
-        };
-        
-        hrm_k_ralt: hrm_k_ralt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            label = "HRM_K_RALT";
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms    = <125>;
-            bindings = <&kp K &kp RALT>;
-        };
-        
-        hrm_l_rctrl: hrm_l_rctrl {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            label = "HRM_L_RCTRL";
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms    = <125>;
-            bindings = <&kp L &kp RCTRL>;
-        };
-        
-        hrm_semi_rshift: hrm_semi_rshift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            label = "HRM_SEMI_RSHIFT";
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms    = <125>;
-            bindings = <&kp SEMI &kp RSHFT>;
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -189,7 +119,7 @@ default_layer {
         &lt 3 TAB     &kp Q        &kp W        &kp E        &kp R        &kp T    &kp Y        &kp U        &kp I        &kp O        &kp P        &kp BSPC
 
         // ---------------- Row 2 (12) ----------------
-        &td0   &hrm_a_lshift   &hrm_s_lctrl   &hrm_d_lalt   &hrm_f_lgui   &kp G   &kp H   &hrm_j_rgui   &hrm_k_ralt   &hrm_l_rctrl   &hrm_semi_rshift   &td_tildes
+        &td0      &bhm LCTRL A     &bhm LGUI S     &bhm LALT D     &bhm LSHIFT F   &kp G   &kp H   &bhm RGUI J     &bhm LALT K     &bhm RCTLR L     &bhm RSHIFT SEMI      &td_tildes
 
         // ---------------- Row 3 (12) ----------------
         &kp LCTRL     &kp Z       &kp X        &kp C        &kp V        &kp B    &kp N         &kp M       &kp COMMA    &kp DOT      &kp SLASH    &lt 3 ESC
