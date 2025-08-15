@@ -45,7 +45,7 @@
             delay-ms = <0>;                   // 10
         };
 
-        hrm_a_lshift: behavior_homerow_mods {
+        hrm_a_lshift: hrm_a_lshift {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_A_LSHIFT";
             #binding-cells = <0>;
@@ -54,7 +54,7 @@
             flavor = "hold-preferred";
             bindings = <&kp A>, <&kp LSHFT>;
         };
-        hrm_s_lctrl: behavior_homerow_mods {
+        hrm_s_lctrl: hrm_s_lctrl {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_S_LCTRL";
             #binding-cells = <0>;
@@ -63,7 +63,7 @@
             flavor = "hold-preferred";
             bindings = <&kp S>, <&kp LCTRL>;
         };
-        hrm_d_lalt: behavior_homerow_mods {
+        hrm_d_lalt: hrm_d_lalt {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_D_LALT";
             #binding-cells = <0>;
@@ -72,7 +72,7 @@
             flavor = "hold-preferred";
             bindings = <&kp D>, <&kp LALT>;
         };
-        hrm_f_lgui: behavior_homerow_mods {
+        hrm_f_lgui: hrm_f_lgui {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_F_LGUI";
             #binding-cells = <0>;
@@ -81,7 +81,7 @@
             flavor = "hold-preferred";
             bindings = <&kp F>, <&kp LGUI>;
         };
-        hrm_j_rgui: behavior_homerow_mods {
+        hrm_j_rgui: hrm_j_rgui {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_J_RGUI";
             #binding-cells = <0>;
@@ -90,7 +90,7 @@
             flavor = "hold-preferred";
             bindings = <&kp J>, <&kp RGUI>;
         };
-        hrm_k_ralt: behavior_homerow_mods {
+        hrm_k_ralt: hrm_k_ralt {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_K_RALT";
             #binding-cells = <0>;
@@ -99,7 +99,7 @@
             flavor = "hold-preferred";
             bindings = <&kp K>, <&kp RALT>;
         };
-        hrm_l_rctrl: behavior_homerow_mods {
+        hrm_l_rctrl: hrm_l_rctrl {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_L_RCTRL";
             #binding-cells = <0>;
@@ -108,7 +108,7 @@
             flavor = "hold-preferred";
             bindings = <&kp L>, <&kp RCTRL>;
         };
-        hrm_semi_rshift: behavior_homerow_mods {
+        hrm_semi_rshift: hrm_semi_rshift {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_SEMI_RSHIFT";
             #binding-cells = <0>;
