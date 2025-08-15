@@ -179,15 +179,13 @@ default_layer {
 
     bindings = <
         // ---------------- Row 1 (12) ----------------
-        &lt 3 TAB     &kp Q        &kp W        &kp E        &kp R        &kp T
-        &kp Y        &kp U        &kp I        &kp O        &kp P        &kp BSPC
+        &lt 3 TAB     &kp Q        &kp W        &kp E        &kp R        &kp T    &kp Y        &kp U        &kp I        &kp O        &kp P        &kp BSPC
 
         // ---------------- Row 2 (12) ----------------
         &td0   &hrm_a_lshift   &hrm_s_lctrl   &hrm_d_lalt   &hrm_f_lgui   &kp G   &kp H   &hrm_j_rgui   &hrm_k_ralt   &hrm_l_rctrl   &hrm_semi_rshift   &td_tildes
 
         // ---------------- Row 3 (12) ----------------
-        &kp LCTRL     &kp Z       &kp X        &kp C        &kp V        &kp B
-        &kp N         &kp M       &kp COMMA    &kp DOT      &kp SLASH    &lt 3 ESC
+        &kp LCTRL     &kp Z       &kp X        &kp C        &kp V        &kp B    &kp N         &kp M       &kp COMMA    &kp DOT      &kp SLASH    &lt 3 ESC
 
         // ---------------- Thumbs (6) ----------------
         &kp LGUI      &mo 1       &kp RET      &kp SPACE    &mo 2        &kp RALT
